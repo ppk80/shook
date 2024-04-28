@@ -13,6 +13,8 @@
 				background: linear-gradient(#784280, #5e4c8a, #784280);
 				color: #7ffad9;
 				font-family: "Exo 2";
+				width: 100%;
+				height: 100%;
 			}
 			
 			.content-section {
@@ -36,18 +38,51 @@
 			}
 			
 			a{color: #FFC0CB}
+			
+			.image-container {
+			  align-items:center;
+			  width: 100%; /* The container takes the full width of the parent */
+			  margin: 0; /* Reset margin */
+			  padding: 0; /* Reset padding */
+			}
+
+			.responsive-image {
+			  max-width: 30%; /* The image adjusts to the container's width */
+			  height: auto; /* Maintains the aspect ratio */
+			}
+
+			.centered-container {
+			  display: flex;  /* Enables Flexbox */
+			  justify-content: center;  /* Centers horizontally */
+			  align-items: center;  /* Centers vertically */
+			  height: 100vh;  /* Full viewport height */
+			}
+
+			.centered-div {
+			  text-align: center;  /* Optional, aligns text within the div */
+			}
 
 		</style>
 	</head>
 
 	<body>
-		<center><a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view"><h1>Shook</h1></a>
-			<p> <a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing">Introduction: 00:00</a><br>
-			<a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing&t=83">July 16, 1990: 01:22</a><br>
-			<a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing&t=780">March 11, 2011: 13:00</a><br>
-			<a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing&t=1712">January 12, 2020: 28:32</a><br>
-			<a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing&t=2715">Coda: 45:15</a><br></p>
-		</center>
+		<div class="centered-container">
+		  <div class="centered-div">
+			<div class="image-container">
+			  <a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view">
+				<img src="shook logo.png" class="responsive-image">
+			  </a>
+			</div>
+			<p>
+			  <a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing">Introduction:</a><br>
+			  <a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing&t=83">July 16, 1990:</a><br>
+			  <a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing&t=780">March 11, 2011</a><br>
+			  <a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing&t=1712">January 12, 2020</a><br>
+			  <a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing&t=2715">Coda</a><br>
+			</p>
+		  </div>
+		</div>
+
 		 <h2>Sources</h2>
 		  <div class="toggle-list">
 			<div class="toggle-item">
