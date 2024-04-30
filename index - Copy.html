@@ -14,7 +14,7 @@
 			
 			body {
 				background: linear-gradient(#2a373e, #20181e, #2a373e);
-				color: #3aaee5;
+				color: #7ffad9;
 				font-family: "Exo 2";
 				width: 100%;
 				height: 100%;
@@ -62,9 +62,8 @@
 			}
 
 			.responsive-image {
-			  max-width: 20%; /* The image adjusts to the container's width */
+			  max-width: 30%; /* The image adjusts to the container's width */
 			  height: auto; /* Maintains the aspect ratio */
-			  padding-bottom: 1%;
 			}
 
 			.centered-container {
@@ -78,26 +77,6 @@
 			  text-align: center;  /* Optional, aligns text within the div */
 			}
 
-			.video {
-				display: flex;
-				justify-content: center;
-				margin-bottom: 20px;
-			}
-
-			.controls {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
-
-			.controls a {
-				cursor: pointer;
-				text-decoration: none;
-			}
-
-			.controls a:hover {
-			}
-
 		</style>
 	</head>
 
@@ -105,19 +84,18 @@
 		<div class="centered-container">
 		  <div class="centered-div">
 			<div class="image-container">
-				<a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/preview"><img src="ShookT.png" class="responsive-image"></a>
+			  <iframe src="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/preview" width="640" height="480" allow="autoplay"></iframe>
+			  <a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view">
+				<img src="ShookLogo.png" class="responsive-image">
+			  </a>
 			</div>
-			<div class="video">
-			  <iframe src="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/preview" width="640" height="480" allow="autoplay" id="embeddedVideo" allowfullscreen></iframe>
-			</div>
-			<div class="controls">
-				<!-- Links to move the video to specific timestamps -->
-				<a onclick="seekTo(0)">Introduction</a> <!-- Start video from the beginning -->
-				<a onclick="seekTo(83)">July 16, 1990</a>
-				<a onclick="seekTo(780)">March 11, 2011</a>
-				<a onclick="seekTo(1712)">January 12, 2020</a>
-				<a onclick="seekTo(2715)">Coda</a><br>
-			</div>
+			<p>
+			  <a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing">Introduction</a><br>
+			  <a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing&t=83">July 16, 1990</a><br>
+			  <a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing&t=780">March 11, 2011</a><br>
+			  <a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing&t=1712">January 12, 2020</a><br>
+			  <a href="https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/view?usp=sharing&t=2715">Coda</a><br>
+			</p>
 		  </div>
 		</div>
 
@@ -149,18 +127,6 @@
 				item.classList.toggle('active'); /* Toggle the 'active' class */
 			  });
 			});
-		</script>
-		<script>
-			function seekTo(time) {
-				// Get the iframe containing the video
-				const iframe = document.getElementById('embeddedVideo');
-				
-				// Generate the URL with the specific timestamp
-				const newSrc = `https://drive.google.com/file/d/1hw4zDGHpNo2o-IDW7SQwOej1DDgMHeC9/preview?t=${time}`;
-
-				// Set the source of the iframe to the new URL
-				iframe.src = newSrc;
-			}
 		</script>
 	</body>
 </html>
