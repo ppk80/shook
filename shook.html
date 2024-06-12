@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo Operating System</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="desktop">
+  <div class="icon" ondblclick="openWindow('window1', 150, 150)"> <img src="icon1.png" alt="App 1">
+    <p>App</p>
+  </div>
+  <div class="icon" ondblclick="openWindow('window2', 150, 150)"> <img src="icon2.png" alt="App 2">
+    <p>App</p>
+  </div>
+  <div class="icon" ondblclick="openWindow('window3', 150, 150)"> <img src="icon2.png" alt="App 2">
+    <p>App</p>
+  </div>
+  <div class="icon" ondblclick="openWindow('window4', 150, 150)"> <img src="icon2.png" alt="App 2">
+    <p>1990</p>
+  </div>
+  <div class="icon" ondblclick="openWindow('window5', 150, 150)"> <img src="icon2.png" alt="App 2">
+    <p>2011</p>
+  </div>
+  <div class="icon" ondblclick="openWindow('window6', 150, 150)"> <img src="icon2.png" alt="App 2">
+    <p>2011</p>
+  </div>
+  <div class="icon" ondblclick="openWindow('window7', 150, 150)"> <img src="icon2.png" alt="App 2">
+    <p>2011</p>
+  </div>
+  <div class="icon" ondblclick="openWindow('window8', 150, 150)"> <img src="icon2.png" alt="App 2">
+    <p>2011</p>
+  </div>
+  <div class="icon" ondblclick="openWindow('window9', 150, 150)"> <img src="icon2.png" alt="App 2">
+    <p>2020</p>
+  </div>
+  <div class="icon" ondblclick="openWindow('window10', 150, 150)"> <img src="icon2.png" alt="App 2">
+    <p>App</p>
+  </div>
+  <div class="icon" ondblclick="openWindow('window11', 150, 150)"> <img src="icon2.png" alt="App 2">
+    <p>App</p>
+  </div>
+</div>
+<div id="taskbar">
+  <div id="taskbar-icons"></div>
+</div>
+<div id="windows">
+<div class="window" id="window1" style="width: 500px; height: 100px;">
+  <div class="title-bar"> <span class="title">App 1</span>
+    <button class="close-btn" onclick="closeWindow('window1')">X</button>
+  </div>
+  <div class="content">
+    <div class="text-row">
+      <div class="text-column">"who"</div>
+      <div class="text-column">"where"</div>
+      <div class="text-column">"what"</div>
+      <div class="text-column">"when"</div>
+      <div class="text-column">"which"</div>
+    </div>
+  </div>
+</div>
+<div class="window" id="window2" style="width: 520px; height: 150px;">
+  <div class="title-bar"> <span class="title">App 2</span>
+    <button class="close-btn" onclick="closeWindow('window2')">X</button>
+  </div>
+  <div class="content">
+    <div class="text-row">
+      <div class="text-column">were<br>
+        you on</div>
+      <div class="text-column">emerged<br>
+        on</div>
+      <div class="text-column">continues<br>
+        from</div>
+      <div class="text-column">was left<br>
+        behind on</div>
+      <div class="text-column">was it<br>
+        on</div>
+      <div class="text-column">was it<br>
+        about</div>
+      <div class="text-column">was recorded on</div>
+    </div>
+  </div>
+</div>
+<div class="window" id="window3" style="width: 500px; height: 100px;">
+  <div class="title-bar"> <span class="title">App 3</span>
+    <button class="close-btn" onclick="closeWindow('window3')">X</button>
+  </div>
+  <div class="content">
+    <div class="text-row">
+      <div class="text-column">1990-07-16</div>
+      <div class="text-column">2011-03-11</div>
+      <div class="text-column">2020-01-12</div>
+    </div>
+  </div>
+  <br>
+</div>
+<div class="window" id="window4" style="width: 500px; height: 300px;">
+  <div class="title-bar"> <span class="title">July 16, 1990</span>
+    <button class="close-btn" onclick="closeWindow('window4')">X</button>
+  </div>
+  <div class="content">
+	<center>
+    <div id="text-changing-div">I cried</div><br><br><br><br><br>as soon as<br><br><br><br><br>
+		
+	<div id="text-changing-div2">I was born</div>
+	</center>
+  </div>
+  <br>
+</div>
+<div class="window" id="window5" style="width: 150px; height: 150px; z-index: 2;">
+  <div class="title-bar"> <span class="title">March 11, 2011</span>
+    <button class="close-btn" onclick="closeWindow('window5')">X</button>
+  </div>
+  <div class="content">
+	    <div id="text-container">
+        <p id="text-display">I felt</p>
+        <button id="cycle-button">></button>
+    </div>
+  </div>
+  <br>
+</div>	
+<div class="window" id="window6" style="width: 150px; height: 150px; z-index: 2;">
+  <div class="title-bar"> <span class="title">March 11, 2011</span>
+    <button class="close-btn" onclick="closeWindow('window6')">X</button>
+  </div>
+  <div class="content">
+	    <div id="text-container">
+        <p id="text-display2">from here</p>
+        <button id="cycle-button2">></button>
+    </div>
+  </div>
+  <br>
+</div>	
+<div class="window" id="window7" style="width: 150px; height: 150px; z-index: 2;">
+  <div class="title-bar"> <span class="title">March 11, 2011</span>
+    <button class="close-btn" onclick="closeWindow('window7')">X</button>
+  </div>
+  <div class="content">
+	    <div id="text-container">
+        <p id="text-display3">the wave</p>
+        <button id="cycle-button3">></button>
+    </div>
+  </div>
+</div>		
+<div class="window" id="window8" style="width: 500px; height: 583px;">
+  <div class="title-bar"> <span class="title">March 11, 2011</span>
+    <button class="close-btn" onclick="closeWindow('window8')">X</button>
+  </div>
+  <div class="content">
+	    <img src="nuc.png"/>
+    </div>
+  </div>
+<div class="window" id="window9" style="width: 500px; height: 583px;">
+  <div class="title-bar"> <span class="title">January 12, 2020</span>
+    <button class="close-btn" onclick="closeWindow('window9')">X</button>
+  </div>
+    <div id="word-container">
+		Let's count the ghosts
+        <div class="draggable-word" draggable="true">38.7 deg Celsius</div>
+        <div class="draggable-word" draggable="true">1946</div>
+        <div class="draggable-word" draggable="true">Ferdinand Marcos</div>
+		<div class="draggable-word" draggable="true">The house I lived in for two years now demolished</div>
+    </div>
+  </div>
+<div class="window" id="window10">
+  <div class="title-bar"> <span class="title">b</span>
+    <button class="close-btn" onclick="closeWindow('window10')">X</button>
+  </div>
+        <div id="video-container">
+        <video id="my-video" controls>
+            <source src="FD.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+  </div>
+<div class="window" id="window11">
+  <div class="title-bar"> <span class="title">a</span>
+    <button class="close-btn" onclick="closeWindow('window11')">X</button>
+  </div>
+        <div id="video-container">
+        <video id="my-video" controls>
+            <source src="interiorofthebody.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+  </div>
+</div>		
+<script src="script.js"></script>
+<script src="script2.js"></script>
+<script src="script3.js"></script>
+</body>
+</html>

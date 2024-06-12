@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo Operating System</title>
+<link rel="stylesheet" href="pstyles.css">
+</head>
+<body>
+<div id="desktop">
+  <div id="windows">
+    <div class="window" id="window5" style="width: 130px; height: 130px; z-index: 2;">
+      <div class="title-bar"> <span class="title">March 11, 2011</span>
+      </div>
+      <div class="content">
+        <div id="text-container">
+          <p id="text-display">I felt</p>
+          <button id="cycle-button">></button>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div class="window" id="window6" style="width: 130px; height: 130px; z-index: 2;">
+      <div class="title-bar"> <span class="title">March 11, 2011</span>
+      </div>
+      <div class="content">
+        <div id="text-container">
+          <p id="text-display2">from here</p>
+          <button id="cycle-button2">></button>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div class="window" id="window7" style="width: 130px; height: 130px; z-index: 2;">
+      <div class="title-bar"> <span class="title">March 11, 2011</span>
+      </div>
+      <div class="content">
+        <div id="text-container">
+          <p id="text-display3">the wave</p>
+          <button id="cycle-button3">></button>
+        </div>
+      </div>
+    </div>
+    <div class="window" id="window8" style="width: 500px; height: 583px;">
+      <div class="title-bar"> <span class="title">March 11, 2011</span>
+      </div>
+      <div class="content"> <img src="nuc.png"/> </div>
+    </div>
+  </div>
+</div>
+<script src="windowscript.js"></script>
+<script src="cycling.js"></script>
+<script>
+	// Position pre-opened windows
+		positionWindow('window5', -90, 70); // Offset from center
+		positionWindow('window6', 100, 70); // Offset from center
+		positionWindow('window7', 10, -70); // Offset from center
+		positionWindow('window8', 0, 0); // Offset from center
+</script>
+</body>
+</html>
