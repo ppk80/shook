@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ghost</title>
+<link rel="stylesheet" href="pstyles.css">
+</head>
+<body>
+<div id="desktop">
+  <div id="windows">
+    <div class="window" id="window10">
+      <div class="title-bar"> <span class="title">b</span> </div>
+      <div id="video-container">
+        <video id="my-video" controls>
+          <source src="vid/suffer.mp4" type="video/mp4">
+          Your browser does not support the video tag. </video>
+      </div>
+    </div>
+    <div class="window" id="window11">
+      <div class="title-bar"> <span class="title">a</span> </div>
+      <div id="video-container">
+        <video id="my-video" controls>
+          <source src="vid/ghost.mp4" type="video/mp4">
+          Your browser does not support the video tag. </video>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="windowscript.js"></script> 
+<script>// Position pre-opened windows
+positionWindow('window10', 0, 200); // Offset from center
+positionWindow('window11', 0, -200); // Offset from center
+</script>
+</body>
+</html>

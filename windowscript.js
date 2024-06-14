@@ -40,3 +40,14 @@ function positionWindow(windowId, x, y) {
     windowElement.style.left = `${centerX}px`;
     windowElement.style.top = `${centerY}px`;
 }
+
+// Smooth scroll adjustment (for slower scrolling)
+document.querySelectorAll('.window-content').forEach(content => {
+    content.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        content.scrollBy({
+            top: e.deltaY * 0.5, // Adjust scroll speed (smaller factor = slower scrolling)
+            behavior: 'smooth'
+        });
+    });
+});

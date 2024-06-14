@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>crybt</title>
+<link rel="stylesheet" href="pstyles.css">
+</head>
+<body>
+<div id="desktop">
+  <div id="windows">
+    <div class="window" id="window10" style="z-index:1;">
+  <div class="title-bar"> <span class="title">b</span>
+  </div>
+        <div id="video-container">
+        <video id="my-video" controls>
+            <source src="vid/imelda.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    	</div>
+</div>
+    <div class="window" id="window8" style="width: 200px; height: 400px;">
+      <div class="title-bar"> <span class="title">March 11, 2011</span>
+      </div>
+      <div class="content"> <img src="img/crybt2.png"/> </div>
+    </div>
+   </div>
+</div>
+<script src="windowscript.js"></script>
+<script>// Position pre-opened windows
+positionWindow('window10', 200, 0); // Offset from center
+positionWindow('window8', -300, 0); // Offset from center
+</script>
+</body>
+</html>

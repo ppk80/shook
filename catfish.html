@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>candle</title>
+<link rel="stylesheet" href="pstyles.css">
+</head>
+<body>
+<div id="desktop">
+  <div id="windows">
+    <div class="window" id="window10">
+      <div class="title-bar"> <span class="title">b</span> </div>
+      <div id="video-container">
+        <video id="my-video" controls>
+          <source src="vid/catfish.mp4" type="video/mp4">
+          Your browser does not support the video tag. </video>
+      </div>
+    </div>
+    <div class="window" id="window1" style="width: 200px; height: 200px; background-color: #2B0405; z-index:4;">
+      <div class="title-bar"> <span class="title">March 11, 2011</span> </div>
+      <div class="content"> WW2 </div>
+    </div>
+    <div class="window" id="window2" style="width: 200px; height: 200px; background-color: #032242; z-index:3;">
+      <div class="title-bar"> <span class="title">March 11, 2011</span> </div>
+      <div class="content"> Occupation of Japan<br>
+占領下の日本 </div>
+    </div>
+    <div class="window" id="window3" style="width: 200px; height: 200px; background-color: #17321E; z-index:2;">
+      <div class="title-bar"> <span class="title">March 11, 2011</span> </div>
+      <div class="content"> The Japanese economic miracle <br> 高度経済成長 </div>
+    </div>
+    <div class="window" id="window4" style="width: 200px; height: 200px; background-color: #300F3E; z-index:1;">
+      <div class="title-bar"> <span class="title">March 11, 2011</span> </div>
+      <div class="content"> Lost 30 Years <br> 失われた30年 </div>
+    </div>
+  </div>
+</div>
+<script src="windowscript.js"></script>
+<script>// Position pre-opened windows
+positionWindow('window10', 0, 200); // Offset from center
+positionWindow('window1', 0, -200); // Offset from center
+positionWindow('window2', 10, -200); // Offset from center
+positionWindow('window3', 20, -200); // Offset from center
+positionWindow('window4', 30, -200); // Offset from center
+</script>
+</body>
+</html>

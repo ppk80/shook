@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo Operating System</title>
+<link rel="stylesheet" href="pstyles.css">
+</head>
+<body>
+<div id="desktop">
+  <div id="windows">
+    <div class="window" id="window10" style="z-index:1;">
+  <div class="title-bar"> <span class="title">b</span>
+  </div>
+        <div id="video-container">
+        <video id="my-video" controls>
+            <source src="cory.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    	</div>
+</div>
+    <div class="window" id="window8" style="width: 950px; height: 750px;">
+      <div class="title-bar"> <span class="title">March 11, 2011</span>
+      </div>
+      <div class="content"> <img src="img/balete.jpg" width="900"/> </div>
+    </div>
+   </div>
+</div>
+<script src="windowscript.js"></script>
+<script>// Position pre-opened windows
+positionWindow('window10', 0, 0); // Offset from center
+positionWindow('window8', 0, 0); // Offset from center
+</script>
+</body>
+</html>

@@ -1,44 +1,102 @@
 /* styles.css */
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    margin: 0;
+    margin: 5%;
     position: relative;
-    background-color: #f0f0f0;
-    overflow: hidden;
+    background-color:  hsl(180, 20%, 20%);
+	color: antiquewhite;
 }
 
 .icon {
-    width: 80px;
-    height: 80px;
-    background-color: #d3d3d3;
-    border: 1px solid #a9a9a9;
-    margin: 10px;
+    width: 60px;
+    height: 60px;
+    background-color:  hsl(180, 50%, 50%, 0.2);
+    border: 0 auto ;
+    margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     position: absolute;
     text-align: center;
-    line-height: 80px;
     user-select: none;
+	border-radius: 15px;
 }
 
-button {
-    position: absolute;
+/* Initial positions to form a person shape */
+#head {
     top: 20px;
-    left: 20px;
-    padding: 10px 20px;
+    left: calc(50% - 30px);
 }
 
-#output {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
-    padding: 10px;
-    border: 1px solid black;
+#body {
+    top: 90px;
+    left: calc(50% - 30px);
+}
+
+#left-arm {
+    top: 90px;
+    left: calc(50% - 100px);
+}
+
+#right-arm {
+    top: 90px;
+    left: calc(50% + 40px);
+}
+
+#left-leg {
+    top: 160px;
+    left: calc(50% - 60px);
+}
+
+#right-leg {
+    top: 160px;
+    left: calc(50%);
+}
+
+/* Additional parts for the rest of the 15 divs */
+#part1 {
+    top: 20px;
+    left: calc(50% - 150px);
+}
+
+#part2 {
+    top: 20px;
+    left: calc(50% + 90px);
+}
+
+#part3 {
+    top: 410px;
+    left: calc(50% - 120px);
+}
+
+#part4 {
+    top: 410px;
+    left: calc(50% + 60px);
+}
+
+#part5 {
+    top: 340px;
+    left: calc(50% - 90px);
+}
+
+#part6 {
+    top: 340px;
+    left: calc(50% + 30px);
+}
+
+#part7 {
+    top: 270px;
+    left: calc(50% - 70px);
+}
+
+#part8 {
+    top: 270px;
+    left: calc(50% + 10px);
+}
+
+#part9 {
+    top: 230px;
+    left: calc(50% - 30px);
 }

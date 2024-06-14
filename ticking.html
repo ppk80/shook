@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ticking</title>
+<link rel="stylesheet" href="pstyles.css">
+</head>
+<body>
+<div id="desktop">
+  <div id="windows">
+    <div class="window" id="window10" style="z-index:3;">
+  <div class="title-bar"> <span class="title">tremors</span>
+  </div>
+        <div id="video-container">
+        <video id="my-video" controls>
+            <source src="vid/imelda.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    	</div>
+</div>
+    <div class="window" id="window8" style="width: 850px; height: 250px; z-index:2;">
+      <div class="title-bar"> <span class="title">ticking</span>
+      </div>
+      <div class="content"> <img src="img/ddc.png"/> </div>
+    </div>
+    <div class="window" id="window9" style="width: 550px; height: 400px;">
+      <div class="title-bar"> <span class="title">ticking</span>
+      </div>
+      <div class="content"> <img src="img/bw.gif"/> </div>
+    </div>
+   </div>
+</div>
+<script src="windowscript.js"></script>
+<script>// Position pre-opened windows
+positionWindow('window10', 0, -150); // Offset from center
+positionWindow('window8', 30, 200); // Offset from center
+positionWindow('window9', -300, 200); // Offset from center
+</script>
+</body>
+</html>

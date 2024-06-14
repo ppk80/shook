@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo Operating System</title>
+<link rel="stylesheet" href="pstyles.css">
+</head>
+<body>
+<div id="desktop">
+  <div id="windows">
+    <div class="window" id="window10">
+      <div class="title-bar"> <span class="title">b</span> </div>
+      <div id="video-container">
+        <video id="my-video" controls muted>
+          <source src="vid/hitogata.mp4" type="video/mp4">
+          Your browser does not support the video tag. </video>
+      </div>
+    </div>
+    <div class="window" id="window8" style="opacity: 0.4">
+      <div class="title-bar"> <span class="title">March 11, 2011</span> </div>
+      <div class="content"> <img src="img/BS.webp"/> </div>
+    </div>
+    <div class="window" id="window7" style="opacity: 0.4; z-index: 2;">
+      <div class="title-bar"> <span class="title">a</span> </div>
+      <div id="video-container">
+        <video id="my-video" controls>
+          <source src="vid/hitogata.mp4" type="video/mp4">
+          Your browser does not support the video tag. </video>
+      </div>
+    </div>
+    <div class="window" id="window6" style="opacity: 0.4">
+      <div class="title-bar"> <span class="title">born this way</span> </div>
+      <div id="video-container">
+        <video id="my-video" controls>
+          <source src="img/ladyg.gif" type="video/mp4">
+          Your browser does not support the video tag. </video>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="windowscript.js"></script> 
+<script>// Position pre-opened windows
+positionWindow('window10', 0, 200); // Offset from center
+positionWindow('window8', 0, -200); // Offset from center
+positionWindow('window7', 20, -200); // Offset from center
+positionWindow('window6', -20, -200); // Offset from center
+</script>
+</body>
+</html>

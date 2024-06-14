@@ -42,7 +42,3 @@ function positionWindow(windowId, x, y) {
 }
 
 
-// Position pre-opened windows
-positionWindow('window1', 100, 200); // Offset from center
-positionWindow('window2', -50, 0); // Offset from center
-positionWindow('window3', -100, -200); // Offset from center
