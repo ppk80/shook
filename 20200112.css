@@ -2,7 +2,6 @@
 body {
     display: flex;
     height: 100vh;
-    margin: 5%;
     position: relative;
     background-color:  hsl(180, 20%, 20%);
 	color: antiquewhite;
@@ -26,77 +25,77 @@ body {
 
 /* Initial positions to form a person shape */
 #head {
-    top: 20px;
+    top: 70px; /* 20px + 50px */
     left: calc(50% - 30px);
 }
 
 #body {
-    top: 90px;
+    top: 140px; /* 90px + 50px */
     left: calc(50% - 30px);
 }
 
 #left-arm {
-    top: 90px;
+    top: 140px; /* 90px + 50px */
     left: calc(50% - 100px);
 }
 
 #right-arm {
-    top: 90px;
+    top: 140px; /* 90px + 50px */
     left: calc(50% + 40px);
 }
 
 #left-leg {
-    top: 160px;
+    top: 210px; /* 160px + 50px */
     left: calc(50% - 60px);
 }
 
 #right-leg {
-    top: 160px;
+    top: 210px; /* 160px + 50px */
     left: calc(50%);
 }
 
-/* Additional parts for the rest of the 15 divs */
+/* Additional parts for the rest of the 15 divs with 50px added to the top */
 #part1 {
-    top: 20px;
+    top: 70px; /* 20px + 50px */
     left: calc(50% - 150px);
 }
 
 #part2 {
-    top: 20px;
+    top: 70px; /* 20px + 50px */
     left: calc(50% + 90px);
 }
 
 #part3 {
-    top: 410px;
+    top: 460px; /* 410px + 50px */
     left: calc(50% - 120px);
 }
 
 #part4 {
-    top: 410px;
+    top: 460px; /* 410px + 50px */
     left: calc(50% + 60px);
 }
 
 #part5 {
-    top: 340px;
+    top: 390px; /* 340px + 50px */
     left: calc(50% - 90px);
 }
 
 #part6 {
-    top: 340px;
+    top: 390px; /* 340px + 50px */
     left: calc(50% + 30px);
 }
 
 #part7 {
-    top: 270px;
+    top: 320px; /* 270px + 50px */
     left: calc(50% - 70px);
 }
 
 #part8 {
-    top: 270px;
+    top: 320px; /* 270px + 50px */
     left: calc(50% + 10px);
 }
 
 #part9 {
-    top: 230px;
+    top: 280px; /* 230px + 50px */
     left: calc(50% - 30px);
 }
