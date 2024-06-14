@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+	color: #ffffdf;
 }
 
 #desktop {
@@ -41,7 +42,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: #333;
-    color: #fff;
+    color: #ffdfff;
     padding: 5px;
     cursor: move;
 	border-radius: 15px; /* Add rounded corners */
