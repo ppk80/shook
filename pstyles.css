@@ -1,14 +1,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-	color: #ffffdf;
+   color: #f5eeff;
 }
 
 #desktop {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #008080;
+    background: #8a70b0;  /* Lavender background */
     display: flex;
     flex-wrap: wrap;
     padding: 0 flex;
@@ -19,50 +19,53 @@ body {
     margin: 10px;
     text-align: center;
     cursor: pointer;
+    color: #ede1ff;  /* Light lavender for icon text */
 }
 
 .window {
     display: none;
     position: absolute;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #b499e5;  /* Light purple border */
+    box-shadow: 0 4px 8px rgba(97, 71, 138, 0.4);
     flex-direction: column;
-	display: block;
-	border-radius: 10px; /* Add rounded corners */
+    display: block;
+    border-radius: 10px;
+    background-color: #a08cc0;  /* Medium lavender for window bg */
 }
 
 .content {
     padding: 10px;
     flex: 1;
-	background-color: transparent; 
+    background-color: transparent;
+    color: #f5eeff;  /* Light purple text */
 }
 
 .title-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
-    color: #ffdfff;
+    background: #614784;  /* Darker purple for title bar */
+    color: #e6d9ff;  /* Light lavender text */
     padding: 5px;
     cursor: move;
-	border-radius: 15px; /* Add rounded corners */
+    border-radius: 15px;
 }
 
 .title-bar .title {
     margin-left: 5px;
+    font-weight: bold;
 }
 
-
 #video-container {
-    width: 600px; /* Customize width as needed */
-    height: 350px; /* Customize height as needed */
-    margin: 0 auto; /* Center horizontally */
-    border: 1px solid #ccc; /* Optional: Add border for visual clarity */
+    width: 600px;
+    height: 350px;
+    margin: 0 auto;
+    border: 1px solid #d4c1ff;  /* Light lavender border */
 }
 
 #my-video {
-    width: 100%; /* Fill the width of the container */
-    height: 100%; /* Fill the height of the container */
+    width: 100%;
+    height: 100%;
 }
 
 .text-row {
@@ -72,18 +75,22 @@ body {
 .text-column {
     flex: 1;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #c1afef;  /* Light purple border */
     text-align: center;
+    background-color: #9275bc;  /* Medium-light purple */
 }
-
 
 .draggable-word {
     padding: 5px 10px;
     margin: 5px;
     display: inline-block;
-    cursor: grab; /* Change cursor to indicate draggable */
-    user-select: none; /* Prevent text selection during dragging */
-    position: absolute; /* Position words absolutely for free movement */
+    cursor: grab;
+    user-select: none;
+    position: absolute;
+    background-color: #cbb8ee;  /* Light purple for draggable words */
+    color: #49386e;  /* Dark purple text */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Custom scrollbar for WebKit browsers */
@@ -92,29 +99,29 @@ body {
 }
 
 .window-content::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #c4b3e6; 
     border-radius: 10px;
 }
 
 .window-content::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #7d5ba6; 
     border-radius: 10px;
 }
 
 .window-content::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #614784; 
 }
 
 /* Custom scrollbar for Firefox */
 .window-content {
     scrollbar-width: thin;
-    scrollbar-color: #888 #f1f1f1;
+    scrollbar-color: #7d5ba6 #c4b3e6;
 }
 
 /* To ensure compatibility across browsers */
 @-moz-document url-prefix() {
     .window-content {
         scrollbar-width: thin;
-        scrollbar-color: #888 #f1f1f1;
+        scrollbar-color: #7d5ba6 #c4b3e6;
     }
 }

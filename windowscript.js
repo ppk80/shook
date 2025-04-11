@@ -1,7 +1,8 @@
-// Make windows draggable
+// Make windows draggable - works on both desktop and mobile
 var dragItem = null;
 var offsetX, offsetY;
 
+// Mouse event handlers for desktop
 document.addEventListener('mousedown', function(e) {
     if (e.target.closest('.title-bar')) {
         dragItem = e.target.closest('.window');
@@ -24,6 +25,34 @@ function onMouseUp() {
     document.removeEventListener('mouseup', onMouseUp);
     dragItem = null;
 }
+
+// Touch event handlers for mobile
+document.addEventListener('touchstart', function(e) {
+    if (e.target.closest('.title-bar')) {
+        dragItem = e.target.closest('.window');
+        const touch = e.touches[0];
+        offsetX = touch.clientX - dragItem.getBoundingClientRect().left;
+        offsetY = touch.clientY - dragItem.getBoundingClientRect().top;
+        
+        // Prevent scrolling while dragging
+        e.preventDefault();
+    }
+});
+
+document.addEventListener('touchmove', function(e) {
+    if (dragItem) {
+        const touch = e.touches[0];
+        dragItem.style.left = (touch.clientX - offsetX) + 'px';
+        dragItem.style.top = (touch.clientY - offsetY) + 'px';
+        
+        // Prevent scrolling while dragging
+        e.preventDefault();
+    }
+});
+
+document.addEventListener('touchend', function() {
+    dragItem = null;
+});
 
 // Function to position windows with respect to the center of the screen
 function positionWindow(windowId, x, y) {
